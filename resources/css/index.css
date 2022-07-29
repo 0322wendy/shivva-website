@@ -1,4 +1,50 @@
+/* Universal Styles */
+
 html {
-    background-color: black;
+    background-color: #08080C;
     color: white;
+}
+
+h1 {
+    font-family: 'Yeseva One', Times, serif;
+    font-size: 44px;
+    line-height: 48px;
+}
+
+h2 {
+    font-family: 'Hind', 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 45px;
+}
+
+h3 {
+    font-family: 'Hind', 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+p {
+    font-family: 'Hind', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+button {
+    width: 200px;
+    height: 52px;
+    border: white 4px solid;
+    font-family: 'Hind', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    box-shadow: -6px 6px 0 0 #BF2852;
+    background-color: #08080C;
+    color: white;
+}
+
+button #large-button {
+    width: 328px;
 }
