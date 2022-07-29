@@ -5,6 +5,13 @@ html {
     color: white;
 }
 
+/*
+body {
+    margin: 0 auto;
+    max-width: 1032px;
+}
+*/
+
 h1 {
     font-family: 'Yeseva One', Times, serif;
     font-size: 44px;
@@ -47,4 +54,59 @@ button {
 
 button #large-button {
     width: 328px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1032px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+
+/* Header */
+
+header .header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1032px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Hind', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    text-align: right;
+}
+
+/* Latest Single */
+
+#latest-single {
+    background: url("../images/latest-single-bgimage.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center; 
+}
+
+.single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.album-cover {
+    margin-bottom: 16px;
 }
