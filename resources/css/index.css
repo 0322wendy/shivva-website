@@ -5,12 +5,6 @@ html {
     color: white;
 }
 
-/*
-body {
-    margin: 0 auto;
-    max-width: 1032px;
-}
-*/
 
 h1 {
     font-family: 'Yeseva One', Times, serif;
@@ -23,6 +17,7 @@ h2 {
     font-size: 36px;
     font-weight: bold;
     line-height: 45px;
+    margin-bottom: 64px;
 }
 
 h3 {
@@ -39,8 +34,9 @@ p {
     line-height: 24px;
 }
 
+/* Components */
+
 button {
-    width: 200px;
     height: 52px;
     border: white 4px solid;
     font-family: 'Hind', 'Arial', sans-serif;
@@ -52,26 +48,45 @@ button {
     color: white;
 }
 
-button #large-button {
+.small-button {
+    width: 200px;
+}
+
+.large-button {
     width: 328px;
 }
+
 
 .content {
     margin: 0 auto;
     max-width: 1032px;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 72px;
 
 }
 
-/* Header */
+.photo-background {
+    
+}
 
-header .header-container {
+/* Header */
+/*
+header {
+    background: url("../images/latest-single-bgimage.png") no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+}
+*/
+.header-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1032px;
+    background-color:rgba(8, 8, 12, 0.5);
 }
 
 header a {
@@ -93,20 +108,153 @@ header ul {
 /* Latest Single */
 
 #latest-single {
-    background: url("../images/latest-single-bgimage.png") no-repeat center center fixed;
+    text-align: center; 
+    margin-top: -114px;
+    background: url("../images/latest-single-bgimage.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    text-align: center; 
+}
+
+.latest-single-container {
+    padding-top: 230px;
+    padding-bottom: 230px
 }
 
 .single {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
 }
 
 .album-cover {
     margin-bottom: 16px;
+}
+
+.social-media-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    position: absolute;
+    top: 590px;
+    right: 25%;
+}
+
+/* Upcoming Shows */
+
+.show-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.show-container {
+    max-width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Photo Background 1 */
+
+.photo-1 {
+    background: url("../images/bgphoto-1.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 840px;
+}
+
+
+/* Music */
+
+.music-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 728px;
+    margin: 0 auto;
+}
+
+.album-container {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+    text-align: center;
+}
+
+/* Photo Background 2 */
+
+.photo-2 {
+    background: url("../images/bgphoto-2.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 840px;
+}
+
+/* Media */
+
+.media-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.media-container {
+    max-width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+}
+
+/* Photo Background 3 */
+
+.photo-3 {
+    background: url("../images/bgphoto-3.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 840px;
+}
+
+/* About */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-image {
+    max-width: 508px;
+}
+
+.about-description {
+    max-width: 508px;
+}
+
+/* Footer */
+
+.social-media-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    justify-content: center;
 }
