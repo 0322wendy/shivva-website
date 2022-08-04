@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="resources/css/index.css">
 
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +20,17 @@
                     <h1>SHIVVA</h1>
                 </div>
                 <nav class="nav" id="nav">  
-                    <ul>
-                        <li><a href="#">UPCOMING SHOWS</a></li>
-                        <li><a href="#">MUSIC</a></li>
-                        <li><a href="#">MEDIA</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                    </ul>
+                    <ul id="links">
+                        <li><a href="#upcoming-shows">UPCOMING SHOWS</a></li>
+                        <li><a href="#music">MUSIC</a></li>
+                        <li><a href="#media">MEDIA</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                    </ul>   
                 </nav>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </header>
 
@@ -167,10 +174,10 @@
             </section>
             <section id="about">
                 <div class="content">
-                    <h2>Media</h2>
+                    <h2>About</h2>
                     <div class="about-container">
                         <div class="about-image">
-                            <img src="resources/images/about-image.png" />
+                            <img src="resources/images/about-image.png" class="about-image-src"/>
                         </div>
                         <div class="about-description">
                             <p>Shivva is a shoegaze band from Miami, FL who focus on dreamy and ethereal sounds contrasting with distorted and droning lashes of noise. They are inspired by old and new shoegaze/alternative bands such as My Bloody Valentine, Slowdive, Jesus and Mary Chain, Ringo Deathstarr, and Slow Crush.</p>
