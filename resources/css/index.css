@@ -3,6 +3,13 @@
 html {
     background-color: #08080C;
     color: white;
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
 }
 
 
@@ -36,7 +43,7 @@ p {
 
 /* Components */
 
-button {
+.button {
     height: 52px;
     border: white 4px solid;
     font-family: 'Hind', 'Arial', sans-serif;
@@ -46,6 +53,23 @@ button {
     box-shadow: -6px 6px 0 0 #BF2852;
     background-color: #08080C;
     color: white;
+}
+
+.button:hover {
+    border: none;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #BF2852;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.button:disabled {
+    background-color: #b0b0b0;
+    box-shadow: -6px 6px 0 0 #828181;
 }
 
 .small-button {
@@ -70,7 +94,6 @@ button {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1032px;
-    background-color:rgba(8, 8, 12, 0.5);
 }
 
 #links {
@@ -95,6 +118,23 @@ button {
 
 .icon {
     display: none;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sm-icon:hover {
+    opacity: 0.5;
+    transition: opacity 50ms linear 50ms;
 }
 
 /* Latest Single */
@@ -324,6 +364,7 @@ button {
 
     .show-content {
         width: auto;
+        margin: 0 auto;
         justify-content: flex-start;
         align-content: flex-start;
         gap: 48px 16px; 
@@ -331,6 +372,7 @@ button {
 
     .media-content {
         width: auto;
+        margin: 0 auto;
         justify-content: flex-start;
         align-content: flex-start;
         gap: 48px 16px;  
@@ -359,8 +401,9 @@ button {
         display: block;
     }
 
-    .header-container a:hover {
-        color: #BF2852;
+    .icon:hover {
+        opacity: 0.5;
+        cursor: pointer;
     }
 
 }
@@ -385,23 +428,29 @@ button {
 
     .show-content {
         width: auto;
+        margin: 0 auto;
         flex-direction: column;
         justify-content: flex-start;
         align-content: flex-start;
+        align-items: center;
         row-gap: 48px; 
     }
 
     .music-content {
         width: auto;
+        margin: 0 auto;
         justify-content: flex-start;
         align-content: flex-start;
+        align-items: center;
     }
 
     .media-content {
         width: auto;
+        margin: 0 auto;
         flex-direction: column;
         justify-content: flex-start;
         align-content: flex-start;
+        align-items: center;
         row-gap: 48px;   
     }
 
@@ -414,22 +463,6 @@ button {
         margin: 0 auto;
         width: 90%;
         align-items: center;
-    }
-
-    .header-container #links {
-        display: none;
-    }
-
-    .header-container {
-        background-color: transparent;
-    }
-
-    .header-container a.icon {
-        display: block;
-    }
-
-    .header-container a:hover {
-        color: #BF2852;
     }
 }
 
@@ -452,51 +485,42 @@ button {
 
     .show-content {
         width: auto;
+        margin: 0 auto;
         flex-direction: column;
         justify-content: center;
         align-content: flex-start;
+        align-items: center;
         row-gap: 48px; 
     }
 
     .music-content {
         width: auto;
-        justify-content: flex-start;
+        margin: 0 auto;
+        justify-content: center;
         align-content: flex-start;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .media-content {
         width: auto;
+        margin: 0 auto;
         flex-direction: column;
         justify-content: center;
         align-content: flex-start;
+        align-items: center;
         row-gap: 48px;   
     }
 
     .content {
         margin: 0 auto;
-        width: 87.5%;
+        width: 95%;
     }
 
     .header-container {
         margin: 0 auto;
-        width: 90%;
+        width: 95%;
         align-items: center;
-    }
-
-    .header-container #links {
-        display: none;
-    }
-
-    .header-container {
-        background-color: transparent;
-    }
-
-    .header-container a.icon {
-        display: block;
-    }
-
-    .header-container a:hover {
-        color: #BF2852;
     }
 }
