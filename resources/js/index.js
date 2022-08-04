@@ -1,28 +1,10 @@
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
-  var navContainer = document.getElementsByClassName("header-container");
-  var links = document.getElementById("links");
-  var nav = document.getElementById("nav");
-  var navLinks = document.getElementById("nav-links");
-  var navListItem = document.getElementById("nav-list-item");
+  var links = document.getElementById("mobile-links");
   if (links.style.display === "block") {
     links.style.display = "none";
   } else {
     links.style.display = "block";
-    // Styling navigation
-    nav.style.backgroundColor = "rgba(8, 8, 12, 0.95)";
-    nav.style.position = "absolute";
-    nav.style.top = "84px";
-    // Styling links
-    navLinks.style.padding = "16px 48px";
-    navLinks.style.display = "block";
-    navLinks.style.width = "100%";
-    navLinks.style.margin = "0 auto";
-
-    navListItem.style.float = "none";
-    navListItem.style.width = "100%";
-
-    navContainer.style.backgroundColor = "rgba(8, 8, 12, 0.95)";
   }
 }
 
