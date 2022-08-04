@@ -31,8 +31,8 @@
                     </ul>   
                 </nav>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <span style="color: white"><i class="fa-solid fa-bars fa-2xl"></i></span>
+                <a class="icon" onclick="myFunction()">
+                    <img src="./resources/images/Menu.svg" height="40px" width="auto">
                 </a>
             </div>
         </header>
@@ -45,20 +45,25 @@
                             <img src="resources/images/drift-cover.png" />
                         </div>
                         <h2>drift</h2>
-                        <button class="small-button latest-single-button">spotify</button>
-                        <button class="small-button latest-single-button">soundcloud</button>
+                        <form action="https://open.spotify.com/track/3f3qcD4cVeJvyx8AboZALG?si=4048e09284f64956">
+                            <input type="submit" value="spotify" class="button small-button latest-single-button"/>
+                        </form>
+                        <form action="https://music.apple.com/us/album/drift/1632346136?i=1632346137">
+                            <input type="submit" value="apple music" class="button small-button latest-single-button"/> 
+                        </form>
                     </div>
                     <div class="social-media-1">
-                        <a href=#><img src="resources/images/instagram-icon-40px.svg" /></a>
-                        <a href=#><img src="resources/images/spotify-icon-40px.svg" /></a>
-                        <a href=#><img src="resources/images/soundcloud-icon-40px.svg" /></a>
-                        <a href=#><img src="resources/images/bandcamp-icon-40px.svg"/></a>
-                        <a href=#><img src="resources/images/tiktok-icon-40px.svg"/></a>
+                        <a href="https://www.instagram.com/shivvamusic/" target="_blank"><img src="resources/images/instagram-icon-40px.svg" class="sm-icon" /></a>
+                        <a href="https://open.spotify.com/artist/619jLqgsLUvjJGH23yXQkl?si=X4rESEzyR9a3CGS744BTSg" target="_blank"><img src="resources/images/spotify-icon-40px.svg" class="sm-icon" /></a>
+                        <a href="https://music.apple.com/us/artist/shivva/1630020682" target="_blank"><img src="resources/images/apple-music-icon-40px.svg" class="sm-icon" /></a>
+                        <a href="https://soundcloud.com/shivva-music-273283460" target="_blank"><img src="resources/images/soundcloud-icon-40px.svg" class="sm-icon" /></a>
+                        <a href="https://shivva.bandcamp.com/music" target="_blank"><img src="resources/images/bandcamp-icon-40px.svg" class="sm-icon" /></a>
+                        <a href="https://www.tiktok.com/@shivva__" target="_blank"><img src="resources/images/tiktok-icon-40px.svg" class="sm-icon" /></a>
                     </div>
                 </div>
             </section>
             <section id="upcoming-shows">
-                <div class="content">
+                <div class="content reveal">
                     <h2>Upcoming Shows</h2>
                     <div class="show-content">
                         <div class="show-container">
@@ -67,10 +72,11 @@
                             </div>
                             <div class="show-description">
                                 <h3>swivvel w/ shivva & bloom dream</h3>
+                                <br>
                                 <p>Friday July 29th 2022</p>
                                 <p>Gramps</p>
                             </div>
-                            <button class="large-button">free</button>
+                            <button class="button large-button" disabled>free :)</button>
                         </div>
                         <div class="show-container">
                             <div class="show-image">
@@ -78,31 +84,36 @@
                             </div>
                             <div class="show-description">
                                 <h3>children of the flesh w/ awall, no traffik, & shivva</h3>
+                                <br>
                                 <p>Saturday July 30th 2022</p>
                                 <p>American Legion Post 92</p>
                             </div>
-                            <button class="large-button">purchase tickets</button>
+                            <form action=#>
+                                <input type="submit" value="purchase tickets" class="button large-button"/>
+                            </form>
                         </div>
                         <div class="show-container">
                             <div class="show-image">
-                                <img src="resources/images/default-show.png" />
+                                <img src="resources/images/aug-19-show.png" />
                             </div>
                             <div class="show-description">
-                                <h3>TBA</h3>
-                                <br>
+                                <h3>the chans w/ the floridians, rude television, and shivva</h3>
+                                <!-- <br> -->
                                 <p>Friday August 19th 2022</p>
                                 <p>Propaganda</p>
                             </div>
-                            <button class="large-button">purchase tickets</button>
+                            <form action="https://www.eventbrite.com/e/strange-summer-tickets-380070128987" target="_blank">
+                                <input type="submit" value="purchase tickets" class="button large-button"/>
+                            </form>
                         </div>
                     </div>
                  </div>
             </section>
-            <section class="photo-background photo-1">
+            <section class="photo-background photo-1 reveal">
 
             </section>
             <section id="music">
-                <div class="content">
+                <div class="content reveal">
                     <h2>Music</h2>
                     <div class="music-content">
                         <div class="album-container">
@@ -110,35 +121,46 @@
                                 <img src="resources/images/drift-cover.png" />
                             </div>
                             <h3>drift</h3>
-                            <button class="small-button" >spotify</button>
-                            <button class="small-button" >soundcloud</button>
+                            <form action="https://open.spotify.com/track/3f3qcD4cVeJvyx8AboZALG?si=4048e09284f64956">
+                                <input type="submit" value="spotify" class="button small-button"/>
+                            </form>
+                            <form action="https://music.apple.com/us/album/drift/1632346136?i=1632346137">
+                                <input type="submit" value="apple music" class="button small-button"/>
+                            </form>
                         </div>
                         <div class="album-container">
                             <div class="album-cover">
                                 <img src="resources/images/swoon-cover.png" />
                             </div>
                             <h3>swoon</h3>
-                            <button class="small-button">spotify</button>
-                            <button class="small-button">soundcloud</button>
+                            <form action="https://open.spotify.com/track/45ELsDstwymH7jLJAXbpwV?si=c5869ffb16a84ea4">
+                                <input type="submit" value="spotify" class="button small-button"/>
+                            </form>
+                            <form action="https://music.apple.com/us/album/swoon/1630030041?i=1630030042">
+                                <input type="submit" value="apple music" class="button small-button"/>
+                            </form>
                         </div>
                         <div class="album-container">
                             <div class="album-cover">
                                 <img src="resources/images/dwell-cover.png" />
                             </div>
                             <h3>dwell</h3>
-                            <button class="small-button">spotify</button>
-                            <button class="small-button">soundcloud</button>
+                            <form action="https://soundcloud.com/shivva-music-273283460/dwell?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+                                <input type="submit" value="soundcloud" class="button small-button"/>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="photo-background photo-2">
+            <section class="photo-background photo-2 reveal">
 
             </section>
             <section id="media">
-                <div class="content">
+                <div class="content reveal">
                     <h2>Media</h2>
                     <div class="media-content">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7dP9ybqimZMwdEiHKOkaJP?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <!--
                         <div class="media-container">
                             <div class="media-thumbnail">
                                 <img src="resources/images/blank-image.png" />
@@ -168,15 +190,16 @@
                                 <p>date</p>
                             </div>
                             <button class="large-button">watch</button>
-                        </div>
+                        </div> 
+                    -->
                     </div>
                 </div>
             </section>
-            <section class="photo-background photo-3">
+            <section class="photo-background photo-3 reveal">
 
             </section>
             <section id="about">
-                <div class="content">
+                <div class="content reveal">
                     <h2>About</h2>
                     <div class="about-container">
                         <div class="about-image">
@@ -184,7 +207,9 @@
                         </div>
                         <div class="about-description">
                             <p>Shivva is a shoegaze band from Miami, FL who focus on dreamy and ethereal sounds contrasting with distorted and droning lashes of noise. They are inspired by old and new shoegaze/alternative bands such as My Bloody Valentine, Slowdive, Jesus and Mary Chain, Ringo Deathstarr, and Slow Crush.</p>
-                            <button class="large-button">book us</button>
+                            <form action=#>
+                                <input type="submit" value="book us" class="button large-button"/>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -193,11 +218,12 @@
 
         <footer>
             <div class="social-media-2 content">
-                <a href=#><img src="resources/images/instagram-icon-40px.svg" /></a>
-                <a href=#><img src="resources/images/spotify-icon-40px.svg" /></a>
-                <a href=#><img src="resources/images/soundcloud-icon-40px.svg" /></a>
-                <a href=#><img src="resources/images/bandcamp-icon-40px.svg"/></a>
-                <a href=#><img src="resources/images/tiktok-icon-40px.svg"/></a>
+                <a href="https://www.instagram.com/shivvamusic/" target="_blank"><img src="resources/images/instagram-icon-40px.svg" class="sm-icon"/></a>
+                <a href="https://open.spotify.com/artist/619jLqgsLUvjJGH23yXQkl?si=X4rESEzyR9a3CGS744BTSg" target="_blank"><img src="resources/images/spotify-icon-40px.svg" class="sm-icon" /></a>
+                <a href="https://music.apple.com/us/artist/shivva/1630020682" target="_blank"><img src="resources/images/apple-music-icon-40px.svg" class="sm-icon" /></a>
+                <a href="https://soundcloud.com/shivva-music-273283460" target="_blank"><img src="resources/images/soundcloud-icon-40px.svg" class="sm-icon" /></a>
+                <a href="https://shivva.bandcamp.com/music" target="_blank"><img src="resources/images/bandcamp-icon-40px.svg" class="sm-icon" /></a>
+                <a href="https://www.tiktok.com/@shivva__" target="_blank"><img src="resources/images/tiktok-icon-40px.svg" class="sm-icon" /></a>
             </div>
         </footer>
     <script src="resources/js/index.js"></script>
