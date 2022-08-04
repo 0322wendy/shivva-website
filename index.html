@@ -8,6 +8,9 @@
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/4decc02222.js" crossorigin="anonymous"></script>
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +24,15 @@
                 </div>
                 <nav class="nav" id="nav">  
                     <ul id="links">
-                        <li><a href="#upcoming-shows">UPCOMING SHOWS</a></li>
-                        <li><a href="#music">MUSIC</a></li>
-                        <li><a href="#media">MEDIA</a></li>
-                        <li><a href="#about">ABOUT</a></li>
+                        <li id="nav-list-item"><a href="#upcoming-shows" id="nav-links">UPCOMING SHOWS</a></li>
+                        <li id="nav-list-item"><a href="#music" id="nav-links">MUSIC</a></li>
+                        <li id="nav-list-item"><a href="#media" id="nav-links">MEDIA</a></li>
+                        <li id="nav-list-item"><a href="#about" id="nav-links">ABOUT</a></li>
                     </ul>   
                 </nav>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    <span style="color: white"><i class="fa-solid fa-bars fa-2xl"></i></span>
                 </a>
             </div>
         </header>
