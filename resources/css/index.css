@@ -5,6 +5,7 @@ html {
     color: white;
     padding: 0px;
     margin: 0;
+    -webkit-appearance: none;
 }
 
 body {
@@ -255,8 +256,8 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 48px 16px;
+    justify-content: center;
+    gap: 16px 48px;
     max-width: 728px;
     margin: 0 auto;
 }
@@ -432,6 +433,7 @@ p {
         margin: 0 auto;
         width: 90%;
         align-items: center;
+        overflow: auto;
     }
 
     .nav {
@@ -470,6 +472,7 @@ p {
         width: auto;
         margin: 0 auto;
         justify-content: center;
+        gap: 48px 16px;
     }
 }
 
